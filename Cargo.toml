@@ -2,6 +2,12 @@
 name = "frechet"
 version = "0.1.0"
 edition = "2021"
+authors = ["Martin Fleurial"]
+description = "basic autodifferentiation"
+readme = "README.md"
+repository = "https://github.com/martin-fl/frechet"
+license = "MIT"
+keywords = ["math", "dual-numbers", "autodiff"]
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--html-in-header", "katex-header.html"]
