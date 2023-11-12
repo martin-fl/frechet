@@ -22,7 +22,7 @@
 //! let z1 = derivative(p, 2.0);
 //!
 //! // doing it manually (strictly equivalent)
-//! let z2 = p(2.0.as_dual_variable()).im;
+//! let z2 = p(2.0f32.as_dual_variable()).im;
 //!
 //! // exact derivative
 //! let z3 = p_derivative(2.0);
@@ -34,6 +34,8 @@
 mod dual;
 pub use dual::{dual32, dual64, Dual};
 
+/// Trait allowing conversion of non-dual types into the corresponding "dual variable",
+/// i.e. with unit imaginy part.
 pub trait AsDualVariable: Sized {
     type Precision;
     fn as_dual_variable(self) -> Dual<Self::Precision>;
