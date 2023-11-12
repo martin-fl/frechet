@@ -29,7 +29,7 @@
 //!
 //! assert!((z1 - z3).abs() < f32::EPSILON);
 //! assert!((z2 - z3).abs() < f32::EPSILON);
-//! ````
+//! ```
 
 /// Type representing a simple 32-bit precision dual number.
 #[allow(non_camel_case_types)]
