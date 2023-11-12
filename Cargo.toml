@@ -11,3 +11,6 @@ keywords = ["math", "dual-numbers", "autodiff"]
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--html-in-header", "katex-header.html"]
+
+[dependencies]
+num-traits = "0.2.17"
